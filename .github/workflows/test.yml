@@ -6,7 +6,7 @@ jobs:
     name: We test it on gh
     steps:
       - name: Get app name
-        uses: diggerhq/digger-spade@master
+        uses: diggerhq/digger-spade@main
         id: spade_app
       - name: Print app name
         run: echo "${{ steps.spade_app.outputs.app_name }}"
