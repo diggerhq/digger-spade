@@ -1,0 +1,9 @@
+# action.yaml
+name: 'Digger Spade Action'
+description: 'Get digger app name'
+outputs:
+  app_name:
+    description: 'Digger app name'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
