@@ -6,7 +6,9 @@ jobs:
     name: We test it locally with act
     steps:
       - name: Get app name
-        uses: ./ # Uses an action in the root directory
+        uses: actions/checkout@v2 # Uses an action in the root directory
+        with:
+          path: "digger-spade"
         id: spade_app
       - name: Print app name
         run: echo "${{ steps.spade_app.outputs.app_name }}"
